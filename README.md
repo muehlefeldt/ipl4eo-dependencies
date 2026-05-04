@@ -13,14 +13,14 @@ https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
 
 Clone the environment specification repository:
 
-```
+```bash
 git clone https://github.com/JonasKlotz/ipl4eo-dependencies
 cd ipl4eo-dependencies/
 ```
 
 Install the environment (choose one depending on your system):
 
-```
+```bash
 uv sync --python 3.12 --extra cpu
 # or for GPU:
 uv sync --python 3.12 --extra cu11
@@ -30,14 +30,14 @@ uv sync --python 3.12 --extra cu11
 
 Create a folder for labs and move the notebook there:
 
-```
+```bash
 mkdir labs
 mv lab01.ipynb labs/
 ```
 
 Start Jupyter Lab:
 
-```
+```bash
 uv run --with jupyter jupyter lab
 ```
 
